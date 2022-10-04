@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="TestNGButton">
+        <methods>
+          <include name="beforesuit1"/>
+          <include name="VerifyUnfollowButtonActivity"/>
+          <include name="ExitFromBrowser"/>
+          <include name="CreatePOMObjects"/>
+          <include name="LaunchBrowser"/>
+          <include name="VerifyMessageButtonActivity"/>
+          <include name="EnterInFacebook"/>
+          <include name="removePOMObjects"/>
+          <include name="VerifyBlockButtonActivity"/>
+          <include name="VerifyUnfrienButtonActivity"/>
+          <include name="LogoutFromAcc"/>
+          <include name="aftersuit1"/>
+        </methods>
+      </class> <!-- TestNGButton -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
