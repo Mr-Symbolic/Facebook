@@ -22,12 +22,12 @@ public class Base {
 		return driver;
 	}
 	
-	public static WebDriver openFirefoxDriver() {
-		System.setProperty("webdriver.chrome.driver", 
-				"\"E:\\Velocity\\selenium\\geckodriver.exe\"");
-		WebDriver driver = new FirefoxDriver();
-		return driver;
-	}
+// 	public static WebDriver openFirefoxDriver() {
+// 		System.setProperty("webdriver.chrome.driver", 
+// 				"\"E:\\Velocity\\selenium\\geckodriver.exe\"");
+// 		WebDriver driver = new FirefoxDriver();
+// 		return driver;
+// 	}
 	
 
 }
