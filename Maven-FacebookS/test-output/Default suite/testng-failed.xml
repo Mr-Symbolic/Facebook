@@ -3,22 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNGButton">
+      <class name="Test.TestNGMessenger">
         <methods>
-          <include name="beforesuit1"/>
-          <include name="VerifyUnfollowButtonActivity"/>
+          <include name="LogoutFromcurrentAcc"/>
+          <include name="CreatePOMObjectsFB"/>
+          <include name="aftersuit2"/>
+          <include name="VerifyMessenger"/>
+          <include name="beforesuit2"/>
+          <include name="LaunchFacebookApp"/>
           <include name="ExitFromBrowser"/>
-          <include name="CreatePOMObjects"/>
-          <include name="LaunchBrowser"/>
-          <include name="VerifyMessageButtonActivity"/>
-          <include name="EnterInFacebook"/>
-          <include name="removePOMObjects"/>
-          <include name="VerifyBlockButtonActivity"/>
-          <include name="VerifyUnfrienButtonActivity"/>
-          <include name="LogoutFromAcc"/>
-          <include name="aftersuit1"/>
+          <include name="OpenFacebookWindow"/>
+          <include name="removePOMObjectsFB"/>
         </methods>
-      </class> <!-- TestNGButton -->
+      </class> <!-- Test.TestNGMessenger -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

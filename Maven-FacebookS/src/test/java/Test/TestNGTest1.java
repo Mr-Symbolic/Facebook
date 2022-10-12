@@ -21,6 +21,10 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import FriendBlockOption.AllFriendsList;
 import FriendBlockOption.Friends;
 import Login.HomePage;
@@ -42,6 +46,8 @@ public class TestNGTest1 {
 	private String exptitle;
 	private String expButtonText;
 	private int TestId;
+	private ExtentTest test;
+	private ExtentHtmlReporter reporter;
 	
 	@BeforeSuite
 	public void beforesuit1() {
@@ -51,6 +57,10 @@ public class TestNGTest1 {
 	@Parameters("Browser")
 	@BeforeTest
 	public void LaunchBrowser(String BrowserName) {
+		
+		reporter = new ExtentHtmlReporter("test-output/ExtendReport/Extent.html");
+		ExtentReports extend = new ExtentReports();
+		extend.attachReporter(reporter);
 		
 	if(BrowserName.equals("Chrome"))            
 	{

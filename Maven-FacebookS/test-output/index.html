@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite5731" class="navigator-link">
-              <span class="suite-name border-passed">Suite5731</span>
+              <span class="suite-name border-failed">Suite5731</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite5731" class="navigator-link ">
-                    <span>C:\Users\Admin\eclipse-workspace\Maven-FacebookS\regression.xml</span>
+                    <span>C:\Users\Admin\git\Facebook\Maven-FacebookS\regression.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,  3 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite5731" class="hide-methods failed suite-Suite5731"> (hide)</a> <!-- hide-methods failed suite-Suite5731 -->
+                      <a href="#" panel-name="suite-Suite5731" class="show-methods failed suite-Suite5731"> (show)</a> <!-- show-methods failed suite-Suite5731 -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite5731">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite5731" title="Test.TestNGMessenger" class="method navigator-link" hash-for-method="VerifyMessenger">VerifyMessenger</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite5731 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite5731" class="hide-methods skipped suite-Suite5731"> (hide)</a> <!-- hide-methods skipped suite-Suite5731 -->
+                      <a href="#" panel-name="suite-Suite5731" class="show-methods skipped suite-Suite5731"> (show)</a> <!-- show-methods skipped suite-Suite5731 -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite5731">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite5731" title="Test.TestNGTest1" class="method navigator-link" hash-for-method="VerifyMessageButtonActivity">VerifyMessageButtonActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite5731" title="Test.TestNGTest1" class="method navigator-link" hash-for-method="VerifyMessageButtonActivity">VerifyMessageButtonActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite5731" title="Test.TestNGTest1" class="method navigator-link" hash-for-method="VerifyUnfrienButtonActivity">VerifyUnfrienButtonActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite5731 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,27 +142,7 @@
                     <div class="method-list-content passed suite-Suite5731">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite5731" title="Test.TestNGTest1" class="method navigator-link" hash-for-method="VerifyMessageButtonActivity">VerifyMessageButtonActivity</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite5731" title="Test.TestNGTest1" class="method navigator-link" hash-for-method="VerifyMessageButtonActivity">VerifyMessageButtonActivity</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite5731" title="Test.TestNGMessenger" class="method navigator-link" hash-for-method="VerifyMessenger">VerifyMessenger</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite5731" title="Test.TestNGMessenger" class="method navigator-link" hash-for-method="VerifyMessenger">VerifyMessenger</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite5731" title="Test.TestNGTest1" class="method navigator-link" hash-for-method="VerifyUnfrienButtonActivity">VerifyUnfrienButtonActivity</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite5731 -->
@@ -139,9 +157,55 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite5731" class="panel Suite5731">
-          <div class="suite-Suite5731-class-passed">
+          <div class="suite-Suite5731-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">Test.TestNGMessenger</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyMessenger">
+                  </a> <!-- VerifyMessenger -->
+                  <span class="method-name">VerifyMessenger</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@aria-label=&apos;Messenger&apos;])[1]&quot;}
+  (Session info: MicrosoftEdge=106.0.1370.37)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IT1SSOU&apos;, ip: &apos;192.168.1.204&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 106.0.1370.37, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:51072}, msedge: {msedgedriverVersion: 105.0.1343.50 (1aa39c6858bf..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a9e6bc807b3f45bc2808e9742160ce1
+*** Element info: {Using=xpath, value=(//div[@aria-label=&apos;Messenger&apos;])[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at Login.HomePage.clickonMessenger(HomePage.java:49)
+	at Test.TestNGMessenger.VerifyMessenger(TestNGMessenger.java:99)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite5731-class-failed -->
+          <div class="suite-Suite5731-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
               <span class="class-name">Test.TestNGTest1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -150,6 +214,30 @@
                   <a name="VerifyMessageButtonActivity">
                   </a> <!-- VerifyMessageButtonActivity -->
                   <span class="method-name">VerifyMessageButtonActivity</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLElement] has no size and location
+  (Session info: MicrosoftEdge=106.0.1370.37)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IT1SSOU&apos;, ip: &apos;192.168.1.204&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 106.0.1370.37, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:51143}, msedge: {msedgedriverVersion: 105.0.1343.50 (1aa39c6858bf..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c3153801792e68190cda0b623bdc4b1
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at FriendBlockOption.AllFriendsList.openExploreFriend(AllFriendsList.java:68)
+	at Test.TestNGTest1.EnterInFacebook(TestNGTest1.java:141)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -157,6 +245,30 @@
                   <a name="VerifyMessageButtonActivity">
                   </a> <!-- VerifyMessageButtonActivity -->
                   <span class="method-name">VerifyMessageButtonActivity</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLElement] has no size and location
+  (Session info: chrome=106.0.5249.103)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IT1SSOU&apos;, ip: &apos;192.168.1.204&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a59e58f88b4a56cbe17d1abf73aae35
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at FriendBlockOption.AllFriendsList.openExploreFriend(AllFriendsList.java:68)
+	at Test.TestNGTest1.EnterInFacebook(TestNGTest1.java:141)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -164,10 +276,34 @@
                   <a name="VerifyUnfrienButtonActivity">
                   </a> <!-- VerifyUnfrienButtonActivity -->
                   <span class="method-name">VerifyUnfrienButtonActivity</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLElement] has no size and location
+  (Session info: MicrosoftEdge=106.0.1370.37)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IT1SSOU&apos;, ip: &apos;192.168.1.204&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 106.0.1370.37, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:51143}, msedge: {msedgedriverVersion: 105.0.1343.50 (1aa39c6858bf..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c3153801792e68190cda0b623bdc4b1
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at FriendBlockOption.AllFriendsList.openExploreFriend(AllFriendsList.java:68)
+	at Test.TestNGTest1.EnterInFacebook(TestNGTest1.java:141)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite5731-class-passed -->
+          </div> <!-- suite-Suite5731-class-skipped -->
           <div class="suite-Suite5731-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -181,25 +317,21 @@
                   <span class="method-name">VerifyMessenger</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifyMessenger">
-                  </a> <!-- VerifyMessenger -->
-                  <span class="method-name">VerifyMessenger</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite5731-class-passed -->
         </div> <!-- panel Suite5731 -->
         <div panel-name="test-xml-Suite5731" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\eclipse-workspace\Maven-FacebookS\regression.xml</span>
+            <span class="header-content">C:\Users\Admin\git\Facebook\Maven-FacebookS\regression.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Suite5731&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;extentReport.ExtentTestNGIReporterListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;chromeTest1&quot;&gt;
     &lt;parameter name=&quot;Browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
@@ -262,23 +394,23 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'VerifyMessenger')
 data.setCell(0, 2, 'Test.TestNGMessenger')
-data.setCell(0, 3, 17143);
+data.setCell(0, 3, 18325);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'VerifyMessenger')
 data.setCell(1, 2, 'Test.TestNGMessenger')
-data.setCell(1, 3, 15935);
+data.setCell(1, 3, 11375);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'VerifyMessageButtonActivity')
+data.setCell(2, 1, 'VerifyUnfrienButtonActivity')
 data.setCell(2, 2, 'Test.TestNGTest1')
-data.setCell(2, 3, 633);
+data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'VerifyMessageButtonActivity')
 data.setCell(3, 2, 'Test.TestNGTest1')
-data.setCell(3, 3, 612);
+data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'VerifyUnfrienButtonActivity')
+data.setCell(4, 1, 'VerifyMessageButtonActivity')
 data.setCell(4, 2, 'Test.TestNGTest1')
-data.setCell(4, 3, 541);
+data.setCell(4, 3, 0);
 window.suiteTableData['Suite5731']= { tableData: data, tableDiv: 'times-div-Suite5731'}
 return data;
 }
@@ -326,187 +458,185 @@ return data;
               <div class="chronological-class-name">Test.TestNGTest1</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforesuit1</span>
-                <span class="method-start">9 ms</span>
+                <span class="method-start">17 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TestNGMessenger</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">LaunchFacebookApp(Edge)</span>
-                <span class="method-start">14 ms</span>
+                <span class="method-name">LaunchFacebookApp(Chrome)</span>
+                <span class="method-start">28 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
-                <span class="method-name">LaunchFacebookApp(Chrome)</span>
-                <span class="method-start">15 ms</span>
+                <span class="method-name">LaunchFacebookApp(Edge)</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TestNGTest1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">LaunchBrowser(Chrome)</span>
-                <span class="method-start">1449 ms</span>
+                <span class="method-start">2763 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.TestNGMessenger</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">CreatePOMObjectsFB</span>
-                <span class="method-start">2250 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">OpenFacebookWindow</span>
-                <span class="method-start">2298 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.TestNGTest1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">LaunchBrowser(Edge)</span>
-                <span class="method-start">3358 ms</span>
+                <span class="method-start">4588 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TestNGMessenger</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">CreatePOMObjectsFB</span>
-                <span class="method-start">6072 ms</span>
+                <span class="method-start">4689 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">OpenFacebookWindow</span>
-                <span class="method-start">6074 ms</span>
+                <span class="method-start">4811 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-class before">
+                <span class="method-name">CreatePOMObjectsFB</span>
+                <span class="method-start">7907 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">OpenFacebookWindow</span>
+                <span class="method-start">7912 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyMessenger</span>
-                <span class="method-start">14741 ms</span>
+                <span class="method-start">14915 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">VerifyMessenger</span>
-                <span class="method-start">17551 ms</span>
+                <span class="method-start">17334 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">LogoutFromcurrentAcc([TestResult name=VerifyMessenger status=SUCCESS method=TestNGMessenger.VerifyMessenger()[pri:0, inst...)</span>
-                <span class="method-start">31890 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LogoutFromcurrentAcc([TestResult name=VerifyMessenger status=FAILURE method=TestNGMessenger.VerifyMessenger()[pri:0, inst...)</span>
+                <span class="method-start">28720 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">LogoutFromcurrentAcc([TestResult name=VerifyMessenger status=SUCCESS method=TestNGMessenger.VerifyMessenger()[pri:0, inst...)</span>
-                <span class="method-start">33488 ms</span>
+                <span class="method-start">33243 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">removePOMObjectsFB</span>
+                <span class="method-start">39149 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TestNGTest1</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">CreatePOMObjects</span>
-                <span class="method-start">35056 ms</span>
+                <span class="method-start">39155 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">EnterInFacebook</span>
+                <span class="method-start">39169 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TestNGMessenger</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">removePOMObjectsFB</span>
-                <span class="method-start">35056 ms</span>
+                <span class="method-start">43305 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TestNGTest1</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">EnterInFacebook</span>
-                <span class="method-start">35060 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-class before">
                 <span class="method-name">CreatePOMObjects</span>
-                <span class="method-start">36934 ms</span>
+                <span class="method-start">43310 ms</span>
               </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.TestNGMessenger</div> <!-- chronological-class-name -->
-              <div class="configuration-class after">
-                <span class="method-name">removePOMObjectsFB</span>
-                <span class="method-start">36934 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.TestNGTest1</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">EnterInFacebook</span>
-                <span class="method-start">36939 ms</span>
+                <span class="method-start">43316 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyMessageButtonActivity</span>
-                <span class="method-start">64448 ms</span>
+                <span class="method-start">68526 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">LogoutFromAcc([TestResult name=VerifyMessageButtonActivity status=SUCCESS method=TestNGTest1.VerifyMessageButtonAc...)</span>
-                <span class="method-start">65061 ms</span>
+                <span class="method-name">LogoutFromAcc</span>
+                <span class="method-start">68529 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">VerifyMessageButtonActivity</span>
-                <span class="method-start">66434 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">removePOMObjects</span>
-                <span class="method-start">66444 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.TestNGMessenger</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">ExitFromBrowser</span>
-                <span class="method-start">66447 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.TestNGTest1</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">LogoutFromAcc([TestResult name=VerifyMessageButtonActivity status=SUCCESS method=TestNGTest1.VerifyMessageButtonAc...)</span>
-                <span class="method-start">67069 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
-                <span class="method-name">ExitFromBrowser</span>
-                <span class="method-start">68941 ms</span>
-              </div> <!-- configuration-test after -->
               <div class="configuration-method before">
                 <span class="method-name">EnterInFacebook</span>
-                <span class="method-start">69990 ms</span>
+                <span class="method-start">68532 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyUnfrienButtonActivity</span>
-                <span class="method-start">96165 ms</span>
+                <span class="method-start">68534 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">LogoutFromAcc([TestResult name=VerifyUnfrienButtonActivity status=SUCCESS method=TestNGTest1.VerifyUnfrienButtonAc...)</span>
-                <span class="method-start">96707 ms</span>
+                <span class="method-name">LogoutFromAcc</span>
+                <span class="method-start">68538 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">removePOMObjects</span>
-                <span class="method-start">98363 ms</span>
+                <span class="method-start">68540 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TestNGMessenger</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">ExitFromBrowser</span>
-                <span class="method-start">98364 ms</span>
+                <span class="method-start">68545 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TestNGTest1</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">ExitFromBrowser</span>
-                <span class="method-start">100849 ms</span>
+                <span class="method-start">68548 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="test-method">
+                <span class="method-name">VerifyMessageButtonActivity</span>
+                <span class="method-start">72939 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">LogoutFromAcc</span>
+                <span class="method-start">72943 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">removePOMObjects</span>
+                <span class="method-start">72944 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.TestNGMessenger</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">ExitFromBrowser</span>
+                <span class="method-start">72946 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.TestNGTest1</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">ExitFromBrowser</span>
+                <span class="method-start">72947 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TestNGMessenger</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">aftersuit2</span>
-                <span class="method-start">100997 ms</span>
+                <span class="method-start">72976 ms</span>
               </div> <!-- configuration-suite after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TestNGTest1</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">aftersuit1</span>
-                <span class="method-start">100998 ms</span>
+                <span class="method-start">72979 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

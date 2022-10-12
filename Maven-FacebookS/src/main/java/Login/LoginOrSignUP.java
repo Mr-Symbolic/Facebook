@@ -27,12 +27,12 @@ public class LoginOrSignUP {
 	
 	@FindBy (xpath = "//button[@name='login']")       //     //button[text()='Log In']    //
 	private WebElement login ;
-//	
-//	public LoginOrSignUP(WebDriver driver) {
-//		PageFactory.initElements(driver, this);
-//		wait = new WebDriverWait(driver,8);
-//		act = new Actions(driver);
-//	}
+	
+	public LoginOrSignUP(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+		wait = new WebDriverWait(driver,8);
+		act = new Actions(driver);
+	}
 	
 	public void loginToApplication(String userName, String passWord) {
 		username.sendKeys(userName);             //pratik57shirude@gmail.com

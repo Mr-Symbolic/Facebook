@@ -18,13 +18,18 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+import BrowserSetUP.Base;
 import FriendBlockOption.AllFriendsList;
 import Login.HomePage;
 import Login.LoginOrSignUP;
 import TextOnMessenger.MessengerPage;
 import Utils.Utility;
 
-public class TestNGMessenger {
+public class TestNGMessenger extends Base {
 	
 	private WebDriver driver ;
 	private AllFriendsList allFriendsList;
@@ -32,6 +37,8 @@ public class TestNGMessenger {
 	private HomePage homePage ;
 	private MessengerPage messengerPage;
 	private int TestId;
+	private ExtentTest test;
+	private ExtentHtmlReporter reporter;
 	
 	@BeforeSuite
 	public void beforesuit2() {
@@ -41,20 +48,27 @@ public class TestNGMessenger {
 	
 	@Parameters("Browser")
 	@BeforeTest
-	public void LaunchFacebookApp(String BrowserName) {
+	public void LaunchFacebookApp(String BrowserName) {   //
+		
+		reporter = new ExtentHtmlReporter("test-output/ExtendReport/Extent.html");
+		ExtentReports extend = new ExtentReports();
+		extend.attachReporter(reporter);
+				
 		
 		if(BrowserName.equals("Chrome"))               
 		{
-			System.setProperty("webdriver.chrome.driver", 
-					"E:\\Velocity\\selenium\\chromedriver.exe");
-		    driver = new ChromeDriver();
+//			System.setProperty("webdriver.chrome.driver", 
+//					"E:\\Velocity\\selenium\\chromedriver.exe");
+//		    driver = new ChromeDriver();
+			driver = openChromeDriver();
 		}
 
 		if(BrowserName.equals("Edge"))
 		{
-			System.setProperty("webdriver.edge.driver",
-					"E:\\Velocity\\selenium\\msedgedriver.exe");
-		    driver = new EdgeDriver();
+//			System.setProperty("webdriver.edge.driver",
+//					"E:\\Velocity\\selenium\\msedgedriver.exe");
+//		    driver = new EdgeDriver();
+			driver = openEdgeDriver();
 		}
 		
 		driver.manage().window().maximize();

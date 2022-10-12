@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 28 11:51:24 IST 2022</td>
+<td>Started on:</td><td>Mon Oct 10 17:19:11 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (63 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2389 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestNGButton.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: TestNGButton</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos;Browser&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
-in C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1326524165\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:270)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+<td title='Test.TestNGMessenger.LaunchFacebookApp()'><b>LaunchFacebookApp</b><br>Test class: Test.TestNGMessenger</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;this.driver&quot; is null
+	at Test.TestNGMessenger.LaunchFacebookApp(TestNGMessenger.java:74)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
 	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
 	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
 	at org.testng.TestRunner.run(TestRunner.java:589)
@@ -100,15 +100,15 @@ in C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1326524165\testng-customsuit
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1786294176", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1786294176'><pre>org.testng.TestNGException: 
-Parameter &apos;Browser&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
-in C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1326524165\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:270)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1527953000", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1527953000'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;this.driver&quot; is null
+	at Test.TestNGMessenger.LaunchFacebookApp(TestNGMessenger.java:74)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
 	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
 	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
 	at org.testng.TestRunner.run(TestRunner.java:589)
@@ -126,8 +126,8 @@ in C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1326524165\testng-customsuit
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>-1664346084</td>
-<td>TestNGButton@67d48005</td></tr>
+<td>2</td>
+<td>Test.TestNGMessenger@222545dc</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -137,60 +137,30 @@ in C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1326524165\testng-customsuit
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestNGButton.LogoutFromAcc()'><b>LogoutFromAcc</b><br>Test class: TestNGButton</td>
+<td title='Test.TestNGMessenger.LogoutFromcurrentAcc()'><b>LogoutFromcurrentAcc</b><br>Test class: Test.TestNGMessenger</td>
 <td></td>
-<td>-1664346084</td>
-<td>TestNGButton@67d48005</td></tr>
+<td>-1665402554</td>
+<td>Test.TestNGMessenger@222545dc</td></tr>
 <tr>
-<td title='TestNGButton.LogoutFromAcc()'><b>LogoutFromAcc</b><br>Test class: TestNGButton</td>
+<td title='Test.TestNGMessenger.removePOMObjectsFB()'><b>removePOMObjectsFB</b><br>Test class: Test.TestNGMessenger</td>
 <td></td>
-<td>-1664346084</td>
-<td>TestNGButton@67d48005</td></tr>
+<td>-1665402554</td>
+<td>Test.TestNGMessenger@222545dc</td></tr>
 <tr>
-<td title='TestNGButton.EnterInFacebook()'><b>EnterInFacebook</b><br>Test class: TestNGButton</td>
+<td title='Test.TestNGMessenger.OpenFacebookWindow()'><b>OpenFacebookWindow</b><br>Test class: Test.TestNGMessenger</td>
 <td></td>
-<td>-1664346084</td>
-<td>TestNGButton@67d48005</td></tr>
+<td>-1665402554</td>
+<td>Test.TestNGMessenger@222545dc</td></tr>
 <tr>
-<td title='TestNGButton.EnterInFacebook()'><b>EnterInFacebook</b><br>Test class: TestNGButton</td>
+<td title='Test.TestNGMessenger.ExitFromBrowser()'><b>ExitFromBrowser</b><br>Test class: Test.TestNGMessenger</td>
 <td></td>
-<td>-1664346084</td>
-<td>TestNGButton@67d48005</td></tr>
+<td>-1665402554</td>
+<td>Test.TestNGMessenger@222545dc</td></tr>
 <tr>
-<td title='TestNGButton.LogoutFromAcc()'><b>LogoutFromAcc</b><br>Test class: TestNGButton</td>
+<td title='Test.TestNGMessenger.CreatePOMObjectsFB()'><b>CreatePOMObjectsFB</b><br>Test class: Test.TestNGMessenger</td>
 <td></td>
-<td>-1664346084</td>
-<td>TestNGButton@67d48005</td></tr>
-<tr>
-<td title='TestNGButton.LogoutFromAcc()'><b>LogoutFromAcc</b><br>Test class: TestNGButton</td>
-<td></td>
-<td>-1664346084</td>
-<td>TestNGButton@67d48005</td></tr>
-<tr>
-<td title='TestNGButton.EnterInFacebook()'><b>EnterInFacebook</b><br>Test class: TestNGButton</td>
-<td></td>
-<td>-1664346084</td>
-<td>TestNGButton@67d48005</td></tr>
-<tr>
-<td title='TestNGButton.removePOMObjects()'><b>removePOMObjects</b><br>Test class: TestNGButton</td>
-<td></td>
-<td>-1664346084</td>
-<td>TestNGButton@67d48005</td></tr>
-<tr>
-<td title='TestNGButton.ExitFromBrowser()'><b>ExitFromBrowser</b><br>Test class: TestNGButton</td>
-<td></td>
-<td>-1664346084</td>
-<td>TestNGButton@67d48005</td></tr>
-<tr>
-<td title='TestNGButton.EnterInFacebook()'><b>EnterInFacebook</b><br>Test class: TestNGButton</td>
-<td></td>
-<td>-1664346084</td>
-<td>TestNGButton@67d48005</td></tr>
-<tr>
-<td title='TestNGButton.CreatePOMObjects()'><b>CreatePOMObjects</b><br>Test class: TestNGButton</td>
-<td></td>
-<td>-1664346084</td>
-<td>TestNGButton@67d48005</td></tr>
+<td>-1665402554</td>
+<td>Test.TestNGMessenger@222545dc</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -200,15 +170,15 @@ in C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1326524165\testng-customsuit
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestNGButton.VerifyMessageButtonActivity()'><b>VerifyMessageButtonActivity</b><br>Test class: TestNGButton</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos;Browser&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
-in C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1326524165\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:270)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+<td title='Test.TestNGMessenger.VerifyMessenger()'><b>VerifyMessenger</b><br>Test class: Test.TestNGMessenger</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;this.driver&quot; is null
+	at Test.TestNGMessenger.LaunchFacebookApp(TestNGMessenger.java:74)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
 	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
 	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
 	at org.testng.TestRunner.run(TestRunner.java:589)
@@ -225,69 +195,15 @@ in C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1326524165\testng-customsuit
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace9190301", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace9190301'><pre>org.testng.TestNGException: 
-Parameter &apos;Browser&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
-in C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1326524165\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:270)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-	at org.testng.TestRunner.run(TestRunner.java:589)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>TestNGButton@67d48005</td></tr>
-<tr>
-<td title='TestNGButton.VerifyUnfrienButtonActivity()'><b>VerifyUnfrienButtonActivity</b><br>Test class: TestNGButton</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos;Browser&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
-in C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1326524165\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:270)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-	at org.testng.TestRunner.run(TestRunner.java:589)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace422330142", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace422330142'><pre>org.testng.TestNGException: 
-Parameter &apos;Browser&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
-in C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1326524165\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:270)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+</pre></div><a href='#' onClick='toggleBox("stack-trace190628410", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace190628410'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;this.driver&quot; is null
+	at Test.TestNGMessenger.LaunchFacebookApp(TestNGMessenger.java:74)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
 	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
 	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
 	at org.testng.TestRunner.run(TestRunner.java:589)
@@ -306,115 +222,7 @@ in C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1326524165\testng-customsuit
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>TestNGButton@67d48005</td></tr>
-<tr>
-<td title='TestNGButton.VerifyUnfollowButtonActivity()'><b>VerifyUnfollowButtonActivity</b><br>Test class: TestNGButton</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos;Browser&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
-in C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1326524165\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:270)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-	at org.testng.TestRunner.run(TestRunner.java:589)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2129144075", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2129144075'><pre>org.testng.TestNGException: 
-Parameter &apos;Browser&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
-in C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1326524165\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:270)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-	at org.testng.TestRunner.run(TestRunner.java:589)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>TestNGButton@67d48005</td></tr>
-<tr>
-<td title='TestNGButton.VerifyBlockButtonActivity()'><b>VerifyBlockButtonActivity</b><br>Test class: TestNGButton</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos;Browser&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
-in C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1326524165\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:270)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-	at org.testng.TestRunner.run(TestRunner.java:589)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace966544353", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace966544353'><pre>org.testng.TestNGException: 
-Parameter &apos;Browser&apos; is required by BeforeTest on method LaunchBrowser but has not been marked @Optional or defined
-in C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1326524165\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:270)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-	at org.testng.TestRunner.run(TestRunner.java:589)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>TestNGButton@67d48005</td></tr>
+<td>Test.TestNGMessenger@222545dc</td></tr>
 </table><p>
 </body>
 </html>

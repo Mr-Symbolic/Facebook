@@ -16,11 +16,11 @@ public class PersonDetailPage {
 	@FindBy (xpath = "//img[@data-imgperflogname=\"profileCoverPhoto\"]")
 	private WebElement backgroundimage;
 
-//	public PersonDetailPage(WebDriver driver) {
-//		PageFactory.initElements(driver, this);
-//		act = new Actions(driver);
-//		wait = new WebDriverWait(driver,5);
-//	}
+	public PersonDetailPage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+		act = new Actions(driver);
+		wait = new WebDriverWait(driver,5);
+	}
 	
 	public void clickonBackgroundImage() {
 		wait.until(ExpectedConditions.visibilityOf(backgroundimage));
